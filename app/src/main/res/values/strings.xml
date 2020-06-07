@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">app-1.0</string>
+    <string name="recyclify">Recyclify</string>
+    <string name="search">search</string>
+    <string name="scan">Scan</string>
+    <string name="quit">Quit</string>
 </resources>
