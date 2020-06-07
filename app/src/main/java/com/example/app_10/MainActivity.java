@@ -1,5 +1,6 @@
 //AUTHOR: KARAN POLOBOTu
 //DATE: JUNE 7TH, 2020
+//Personal project
 package com.example.app_10;
 
 import androidx.appcompat.app.AppCompatActivity;
