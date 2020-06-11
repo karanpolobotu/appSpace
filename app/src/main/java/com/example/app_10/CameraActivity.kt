@@ -52,7 +52,10 @@ class CameraActivity : AppCompatActivity() {
     }
 
 
-    private fun allPermissionsGranted() = false
+    private fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all {
+        ContextCompat.checkSelfPermission(
+                baseContext, it) == PackageManager.PERMISSION_GRANTED
+    }
 
     fun getOutputDirectory(): File {
         val mediaDir = externalMediaDirs.firstOrNull()?.let {
