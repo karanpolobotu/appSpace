@@ -24,6 +24,10 @@
             android:name=".CameraActivity"
             android:label="app-1.0">
         </activity>
+        <activity
+            android:name=".searchActivity"
+            android:label="app-1.0">
+        </activity>
     </application>
 
 </manifest>

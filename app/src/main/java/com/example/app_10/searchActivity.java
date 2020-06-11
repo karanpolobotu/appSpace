@@ -1,9 +1,6 @@
 package com.example.app_10;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,21 +12,13 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.HashMap;
 
-public class dropDownActivity extends AppCompatActivity {
+public class searchActivity extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dropdown);
-
-        final Button LoadOption = (Button) findViewById(R.id.loadOp);
-        LoadOption.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+        setContentView(R.layout.activity_search);
 
     }
 
