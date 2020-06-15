@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.Manifest
 import android.content.pm.PackageManager
 import android.net.Uri
+import android.os.Environment
 import android.util.Log
 import android.widget.Button
 import android.widget.Toast
@@ -16,6 +17,7 @@ import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import kotlinx.android.synthetic.main.activity_camera.*
 import java.io.File
+import java.io.IOException
 import java.nio.ByteBuffer
 import java.text.SimpleDateFormat
 import java.util.*
