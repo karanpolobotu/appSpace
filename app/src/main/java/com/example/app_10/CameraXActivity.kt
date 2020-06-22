@@ -101,6 +101,18 @@ class CameraXActivity : AppCompatActivity() {
 
             imageCapture = ImageCapture.Builder()
                     .build()
+            
+            val imageAnalysis = ImageAnalysis.Builder()
+    .setTargetResolution(Size(1280, 720))
+    .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
+    .build()
+
+imageAnalysis.setAnalyzer(executor, ImageAnalysis.Analyzer { image ->
+    val rotationDegrees = image.imageInfo.rotationDegrees
+    // insert ML/analysis code
+})
+
+cameraProvider.bindToLifecycle(this as LifecycleOwner, cameraSelector, imageAnalysis, preview)
 
             // Select back camera
             val cameraSelector = CameraSelector.Builder().requireLensFacing(CameraSelector.LENS_FACING_BACK).build()
