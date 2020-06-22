@@ -1,6 +1,6 @@
 package com.example.app_10;
-
 import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
 import android.Manifest
 import android.content.pm.PackageManager
@@ -24,7 +24,7 @@ import java.util.*
 import java.util.concurrent.ExecutorService
 typealias LumaListener = (luma: Double) -> Unit
 
-class CameraActivity : AppCompatActivity() {
+class CameraXActivity : AppCompatActivity() {
     private var preview: Preview? = null
     private var imageCapture: ImageCapture? = null
     private var imageAnalyzer: ImageAnalysis? = null

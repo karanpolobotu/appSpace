@@ -31,13 +31,13 @@ public class MainActivity extends AppCompatActivity {
         Scanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
+                Intent intent = new Intent(MainActivity.this, CameraXActivity.class);
                 startActivity(intent);
             }
         });
 
-        final Button ManualSearch = (Button) findViewById(R.id.search);
-        ManualSearch.setOnClickListener(new View.OnClickListener() {
+        final Button ViewRewards = (Button) findViewById(R.id.reward);
+        ViewRewards.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, searchActivity.class);

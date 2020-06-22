@@ -5,4 +5,5 @@
     <string name="scan">Scan</string>
     <string name="quit">Quit</string>
     <string name="load_options">Load Options</string>
+    <string name="logo">Logo</string>
 </resources>
