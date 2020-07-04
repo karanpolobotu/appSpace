@@ -23,6 +23,7 @@ public class searchActivity extends AppCompatActivity {
     }
 
     //WEBSCRAPER FUNCTIONS, USE LATER FOR SCANNING
+    /*
     public void Scrape() {
         try {
 
@@ -80,6 +81,7 @@ public class searchActivity extends AppCompatActivity {
         }
         catch(IOException e) {e.printStackTrace();}
     }
+     */
 
 
 }

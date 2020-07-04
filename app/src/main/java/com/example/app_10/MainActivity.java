@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Scanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, CameraXActivity.class);
+                Intent intent = new Intent(MainActivity.this, CameraXActivityKt.class);
                 startActivity(intent);
             }
         });

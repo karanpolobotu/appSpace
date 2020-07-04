@@ -11,7 +11,7 @@
         android:layout_width="406dp"
         android:layout_height="149dp"
         android:contentDescription="@string/logo"
-        android:src="@drawable/recyclifyLogo"
+        android:src="@drawable/long_logo"
         app:layout_constraintBottom_toTopOf="@+id/Scan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -23,28 +23,42 @@
         android:id="@+id/reward"
         android:layout_width="236dp"
         android:layout_height="42dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="87dp"
         android:background="@drawable/oval"
-        android:text="View Rewards"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="371dp" />
+        android:text="@string/view_rewards"
+        app:layout_constraintBottom_toTopOf="@+id/Quit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Scan" />
 
     <Button
         android:id="@+id/Quit"
         android:layout_width="236dp"
         android:layout_height="42dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="88dp"
         android:background="@drawable/oval"
         android:text="@string/quit"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="500dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reward" />
 
     <Button
         android:id="@+id/Scan"
         android:layout_width="236dp"
         android:layout_height="42dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="88dp"
         android:background="@drawable/oval"
-        android:text="Scan Items"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="238dp" />
+        android:text="@string/scan_items"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

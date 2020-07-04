@@ -6,4 +6,6 @@
     <string name="quit">Quit</string>
     <string name="load_options">Load Options</string>
     <string name="logo">Logo</string>
+    <string name="scan_items">Scan Items</string>
+    <string name="view_rewards">View Rewards</string>
 </resources>
